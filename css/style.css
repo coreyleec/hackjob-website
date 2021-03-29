@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'hk_groteskitalic';
+  src: url('./hkgrotesk-italic.woff') format('woff2'),
+       url('./hkgrotesk-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hk_grotesksemibold_italic';
+  src: url('hkgrotesk-semibolditalic.woff2') format('woff2'),
+       url('hkgrotesk-semibolditalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-family: 'hk_grotesksemibold_italic';
+  font-size: 10em;
+  margin: 0;
+  color: red; 
+  line-height: .85em;
+  height: 2em;
+  padding: 0px;
+}
+
+p { font-family: 'hk_grotesksemibold_italic';
+  font-size: 3em;
+  margin: 0px;
+  padding: 0px;
+  color: red; 
+  line-height: .1em;
+  height: 2em;/*
+  background: rgba(255,255,255,.50);
+  overflow: hidden;   */ 
+}
+
+h2 {font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+  }
+
+/* html, body {
+  height: 100%;
+  min-height: 100%;
+} */
+
+/* body {
+  background: url(/Users/coreycolligan/Development/learn-prework/hackjob-website/images/backgrounds/room3.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: #bba7cc;
+  padding: 3% 7%;
+}
+.two {
+  background: #a3f3d3;
+  padding: 4% 8%;
+}
+.three {
+  background: #0bbaa0;
+  padding: 4% 8%;
+}
+
+#slide-three.folder {
+  text-align: justify;
+  width: 200px;
+}
+
+#slide-three.folder img {
+  display: block;
+  margin: 0 auto;
+}
+
+.scrolls { 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height:100vh;
+
+   white-space:nowrap
+} 
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+    position: fixed; /* Stay in place front is invalid - may break your css so removed */  
+    padding-top: 100px; /* Location of the box - don't know what this does?  If it is to move your modal down by 100px, then just change top below to 100px and remove this*/
+    left: 0;
+    right:0; /* Full width (left and right 0) */
+    top: 0;
+    bottom: 0; /* Full height top and bottom 0 */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 9999; /* Sit on top - higher than any other z-index in your site*/
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #858585;
+  color: rgb(0, 0, 0);
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;
+background-color:  #858585;
+}
+
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #858585;
+  color: rgb(0, 0, 0);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+/* .thumbnail {
+background-image: url(modalbackground.png);
+
+} */
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* MODAL 2 */
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+    position: fixed; /* Stay in place front is invalid - may break your css so removed */  
+    padding-top: 100px; /* Location of the box - don't know what this does?  If it is to move your modal down by 100px, then just change top below to 100px and remove this*/
+    left: 0;
+    right:0; /* Full width (left and right 0) */
+    top: 0;
+    bottom: 0; /* Full height top and bottom 0 */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 9999; /* Sit on top - higher than any other z-index in your site*/
+}
+
+/* Modal Header 2 */
+.modal-header2 {
+  padding: 2px 16px;
+  background-color: #858585;
+  color: rgb(0, 0, 0);
+}
+
+/* Modal Body */
+.modal-body2 {padding: 2px 16px;
+background-color:  #858585;
+}
+
+
+/* Modal Footer 2 */
+.modal-footer2 {
+  padding: 2px 16px;
+  background-color: #858585;
+  color: rgb(0, 0, 0);
+}
+
+/* Modal Content 2 */
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/* CONTACT BOX */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 0px; /* Some padding */ 
+  font-family: Arial, Helvetica, sans-serif;
+  background: #00dfdf;
+  border: 1px solid rgb(255, 0, 0); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background: #00dfdf;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #ff0000;
+  padding: 20px;
+}
+
+
+.four {
+  background: #00dfdf;
+  padding: 3% 7%;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

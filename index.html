@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+       /* div { object-position: center;} */
+      /*h1, p:align-text: center */
+      .folder {
+         position: relative;
+        display: inline-block;
+      }
+      .folder .folder-open {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+      }
+      .folder:hover .folder-open {
+          display: inline;
+      }
+      .folder2 {
+          position: relative;
+          display: inline-block;
+      }
+      .folder2 .folder-open {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+      }
+      .folder2:hover .folder-open {
+          display: inline;
+      }
+/* MODAL WINDOW */
+
+
+
+  </style>
+</head>
+<body>  
+  <div class="module" id="module"></div>
+
+  
+          <div class="outer-wrapper">
+            <div class="wrapper">
+              <div class="slide one">
+                <h1>Welcome to my website...</h1>
+              </div>
+              <div class="slide two">
+                       <p>I'm</p>
+                       <h1>Corey 
+                        <br>
+                        Lee</h1> 
+              </div>
+              <div class="slide three">
+                      <p>here's some content</p>
+                      <div class="folder">
+                        <a data-target=#myModal data-toggle="modal" class="MainNavText" id="MainNavHelp" href="#myModal"> 
+                           <img src="./images/folder-closed.png" alt="folder-closed" width="150px" height="150px">
+                           <img src="./images/folder-open.png" class="folder-open" alt="folder-open" width="150px" height="150px">
+                            </a>
+                            <h2 style="text-align:center;">some gifs i made</h2>
+                       </div> 
+                       <!-- <div class="folder">
+                          <a data-target=#myModal data-toggle="modal" class="MainNavText" id="MainNavHelp" href="#myModal"> 
+                          <img src="./images/folder-closed.png" alt="folder-closed" width="150px" height="150px">
+                          <img src="./images/folder-open.png" class="folder-open" alt="folder-open" width="150px" height="150px">
+                          </a>
+                          <h2 style="text-align:center;">some pigeons</h2>
+                        </div>
+                        <div class="folder">
+                          <a data-target=#myModal data-toggle="modal" class="MainNavText" id="MainNavHelp" href="#myModal"> 
+                          <img src="./images/folder-closed.png" alt="folder-closed" width="150px" height="150px">
+                          <img src="./images/folder-open.png" class="folder-open" alt="folder-open" width="150px" height="150px">
+                          </a>
+                          <h2 style="text-align:center;">a dragon</h2>
+                        </div>
+                          <div class="folder">
+                            <a data-target=#myModal data-toggle="modal" class="MainNavText" id="MainNavHelp" href="#myModal"> 
+                            <img src="./images/folder-closed.png" alt="folder-closed" width="150px" height="150px">
+                            <img src="./images/folder-open.png" class="folder-open" alt="folder-open" width="150px" height="150px">
+                            </a>
+                            <h2 style="text-align:center;">a crit</h2>
+                          </div>
+                          <div class="folder">
+                            <a data-target=#myModal data-toggle="modal" class="MainNavText" id="MainNavHelp" href="#myModal"> 
+                            <img src="./images/folder-closed.png" alt="folder-closed" width="150px" height="150px">
+                            <img src="./images/folder-open.png" class="folder-open" alt="folder-open" width="150px" height="150px">
+                            </a>
+                            <h2 style="text-align:center;">a parking lot</h2>
+                          </div>
+                          <div class="folder">
+                            <a data-target=#myModal data-toggle="modal" class="MainNavText" id="MainNavHelp" href="#myModal"> 
+                            <img src="./images/folder-closed.png" alt="folder-closed" width="150px" height="150px">
+                            <img src="./images/folder-open.png" class="folder-open" alt="folder-open" width="150px" height="150px">
+                            </a>
+                            <h2 style="text-align:center;">a crit</h2>
+                          </div>
+                        </div> -->
+                        <div class="folder">
+                          <a link="https://youtu.be/Z0wAPztOO2U"> 
+                          <img src="./images/folder-closed.png" alt="folder-closed" width="150px" height="150px">
+                          <img src="./images/folder-open.png" class="folder-open" alt="folder-open" width="150px" height="150px">
+                          </a>
+                          <h2 style="text-align:center;">a video</h2>
+                        </div>
+                        
+                     
+                        
+              </div>
+              <div class="slide four">
+                      <div class="container">
+                        <form action="action_page.php">
+                      
+                          <label for="fname" style="font-family: Arial, Helvetica, sans-serif;" >contact me</label>
+                          <input type="text" id="fname" name="name" placeholder="name">                          
+                          <input type="text" id="lname" name="lastname" placeholder="email">
+                          <textarea id="subject" name="subject" placeholder="message" style="height:200px"></textarea>
+                          <input type="submit" value="Submit">
+                      
+                        </form>
+                      </div>
+              </div>
+            </div>
+          </div>
+           <!-- The Modal -->
+          <div id="myModal" class="modal">
+                <!-- Modal content -->
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <span class="close">&times;</span>    
+            </div>
+                <div class="modal-body">
+                  <br>
+                              <div class="thumbnail">
+                                <a data-target=#myModal2 data-toggle="modal" class="MainNavText2" id="MainNavHelp2" href="#myModal2"> 
+                                  <img src="./gifs/crit.gif" alt="folder-closed" width="200px" height="200px">
+                                </a>
+                                <a data-target=#myModal2 data-toggle="modal2" class="MainNavText2" id="MainNavHelp2" href="#myModal2"> 
+                                  <img src="./gifs/birds.gif" alt="folder-closed" width="200px" height="200px">
+                                </a>
+                                 <a data-target=#myModal2 data-toggle="modal2" class="MainNavText2" id="MainNavHelp2" href="#myModal2"> 
+                                 <img src="./gifs/cat.gif" alt="folder-closed" width="200px" height="200px">
+                                  </a>
+                                  <a data-target=#myModal2 data-toggle="modal2" class="MainNavText2" id="MainNavHelp2" href="#myModal2"> 
+                                    <img src="./gifs/dragon.gif" alt="folder-closed" width="200px" height="200px">
+                                     </a>
+                                    <a data-target=#myModal2 data-toggle="modal2" class="MainNavText2" id="MainNavHelp2" href="#myModal2"> 
+                                      <img src="./gifs/driving.gif" alt="folder-closed" width="200px" height="200px">
+                                       </a>
+                                       <a data-target=#myModal2 data-toggle="modal2" class="MainNavText2" id="MainNavHelp2" href="#myModal2"> 
+                                        <img src="./gifs/parkingLot.gif" alt="folder-closed" width="200px" height="200px">
+                                         </a>
+                            </div>
+
+                  
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+               </div>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+          <script src="index.js"></script>
+</body>
+</html>
